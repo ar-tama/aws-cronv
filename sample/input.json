@@ -1,0 +1,46 @@
+{
+    "Rules": [
+        {
+            "Name": "RuleA",
+            "Arn": "arn:aws:events:us-east-1:01234567:rule/ruleA",
+            "State": "ENABLED",
+            "ScheduleExpression": "cron(10 19 * * ? *)",
+            "EventBusName": "default"
+        },
+        {
+            "Name": "RuleB",
+            "Arn": "arn:aws:events:us-east-1:01234567:rule/ruleB",
+            "State": "ENABLED",
+            "ScheduleExpression": "cron(10 00 * * ? *)",
+            "EventBusName": "default"
+        },
+        {
+            "Name": "RuleC",
+            "Arn": "arn:aws:events:us-east-1:01234567:rule/ruleC",
+            "State": "ENABLED",
+            "ScheduleExpression": "cron(00 18 * * ? *)",
+            "EventBusName": "default"
+        },
+        {
+            "Name": "RuleD",
+            "Arn": "arn:aws:events:us-east-1:01234567:rule/ruleD",
+            "State": "ENABLED",
+            "ScheduleExpression": "cron(30 18 * * ? *)",
+            "EventBusName": "default"
+        },
+        {
+            "Name": "RuleE",
+            "Arn": "arn:aws:events:us-east-1:01234567:rule/ruleE",
+            "State": "ENABLED",
+            "ScheduleExpression": "cron(00/10 * * * ? *)",
+            "EventBusName": "default"
+        },
+        {
+            "Name": "RuleF",
+            "Arn": "arn:aws:events:us-east-1:01234567:rule/ruleF",
+            "State": "DISABLED",
+            "ScheduleExpression": "cron(15 01 * * ? *)",
+            "EventBusName": "default"
+        }
+    ]
+}

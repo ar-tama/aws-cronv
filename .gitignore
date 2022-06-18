@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+
+.env
+.node-version
+dist
+node_modules
