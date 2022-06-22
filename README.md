@@ -1,14 +1,14 @@
 # aws-cronv
 Visualize your EventBridge's cron schedules :clock3:
 
-![Sample](./sample/output.jpg)
+![Sample](https://github.com/ar-tama/aws-cronv/blob/main/sample/output.jpg)
 
 ## Usage
 ```sh
 aws events list-rules | npx aws-cronv >| events.html
 
 # you can also specify from-datetime
-aws events list-rules | npx aws-cronv 2022-01-01T00:00:00+09:00 > events.html
+aws events list-rules | npx aws-cronv 2022-01-01T00:00:00+09:00 >| events.html
 ```
 
 ## TODO

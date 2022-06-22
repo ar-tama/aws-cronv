@@ -1,14 +1,22 @@
 {
   "name": "aws-cronv",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "type": "commonjs",
   "bin": {
     "aws-cronv": "./bin/aws-cronv.js"
   },
   "files": [
-    "bin/",
-    "src/"
+    "bin",
+    "dist",
+    "sample"
   ],
+  "keywords": [
+    "aws",
+    "cloudwatch",
+    "cron",
+    "visualizer"
+  ],
+  "types": "./dist/index.d.ts",
   "license": "MIT",
   "dependencies": {
     "aws-cron-parser": "^1.1.12"
@@ -23,6 +31,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "prepare": "yarn build",
     "lint" : "eslint --fix"
   }
 }
