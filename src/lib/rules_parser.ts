@@ -28,7 +28,7 @@ export class RulesParser {
   static parse(rules: AWSEvent["Rules"]) {
     const parsedRules: Rule[] = []
     for (const rule of rules) {
-      if (rule.State == "DISABLED") {
+      if (rule.State == "DISABLED" || !rule.ScheduleExpression) {
         continue
       }
       const schedule = awsCronParser.parse(this.extractCronPattern(rule.ScheduleExpression))
