@@ -2,7 +2,7 @@ import { Schedule } from "./schedule_builder"
 
 export class Template {
   static build(schedule: Schedule) {
-    const rows = Object.keys(schedule).map(name => schedule[name].map(timestamp => `['${name}', new Date(${timestamp}), new Date(${timestamp})]`).join())
+    const rows = Object.keys(schedule).map(name => schedule[name].map(timestamp => `['${name}', new Date(${timestamp}), new Date(${timestamp})]`).join()).filter(e => e);
     return `
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
